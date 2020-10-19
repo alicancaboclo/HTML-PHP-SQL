@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
  <head>
  <title>Formulário de cadastro</title>
  <style>
@@ -8,7 +8,7 @@
  .retangulo {margin: auto; border: 1px solid black; position:
 relative;}
 
- #ret {width: 450px; background-color: georgian;}
+ #ret {width: 450px; background-color: #6feae0;}
 
  #ret div {
  margin: 20px auto;
@@ -22,12 +22,22 @@ relative;}
  <br />
  <label id="texto01">CADASTRO</label>
  <br /><br />
- <form action="inserir.php" method="POST">
- <p>Nome do Aluno: <input type="text" name="aluno" /></p>
- <p>Diciplina: <input type="text" name="diciplina" /></p>
- <p>Nota1: <input type="text" name="nota1" /></p>
- <p>Nota2: <input type="text" name="nota2" /></p>
- <p>Nota3: <input type="text" name="nota3" /></p>
+ <form action="inserir.php" method="post">
+ <p>Nome do Aluno: <label>
+         <input type="text" name="nome"/>
+     </label></p>
+ <p>Diciplina: <label>
+         <input type="text" name="disciplina" />
+     </label></p>
+ <p>Nota1: <label>
+         <input type="text" name="nota1" />
+     </label></p>
+ <p>Nota2: <label>
+         <input type="text" name="nota2" />
+     </label></p>
+ <p>Nota3: <label>
+         <input type="text" name="nota3" />
+     </label></p>
  <p><input type="submit" name="submit" value="cadastrar" /></p>
  </form>
  </body>
